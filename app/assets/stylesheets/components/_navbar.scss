@@ -1,12 +1,69 @@
-.navbar-lewagon {
+// add a blurred background to the navbar
+.navbar {
   justify-content: space-between;
-  background: white;
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(9px);
 }
 
-.navbar-lewagon .navbar-collapse {
+// space out the items
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+// ************ navbar logo ************
+
+// set the size of the navbar logo (brand)
+.navbar-brand > img {
+  width: 112px;
+  border-radius: 4px;
+}
+
+// ************ navbar avatar ************
+li.nav-item.dropdown {
+  padding: 0px;
+}
+
+// ************ navbar links ************
+
+// style all links of the navbar menu
+.nav-link {
+  font-size: 20px;
+  color: rgba(0,0,0,0.7);
+  font-weight: 100;
+  margin-right: 5px;
+}
+
+// add an outline around the navbar links
+.nav-link:hover {
+  color: black;
+  transition: color 2s;
+  outline: 1px solid rgba(0,0,0,0.5);
+  border-radius: 4px;
+}
+
+// ************ dropdown menu ************
+
+// style the dropdown menu
+.dropdown-menu {
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 4px;
+  border-color: rgba(255,255,255,0.2);
+}
+
+// place the dropdown menu right under the navbar
+.dropdown-menu[data-bs-popper] {
+  top: 130%;
+}
+
+// give 2 items in the dropdown menu a green left border
+.dropdown-item.green {
+  border-left: 2px solid green;
+  margin: 5px;
+  padding: 4px 0px;
+  padding-left: 9px;
+}
+
+// remove the background color when hovering over dropdown item
+.dropdown-menu > a:hover {
+  background-color: transparent;
 }

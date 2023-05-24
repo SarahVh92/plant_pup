@@ -77,3 +77,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Manually added gems
+gem "devise"
+gem 'bootstrap', '~> 5.2', '>= 5.2.3'
