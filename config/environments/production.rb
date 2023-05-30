@@ -93,4 +93,5 @@ Rails.application.configure do
 
   # To alter when ready for deployment (host)
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.serve_static_assets = true
 end
