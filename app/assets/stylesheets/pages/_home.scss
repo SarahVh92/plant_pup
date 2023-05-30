@@ -1,5 +1,18 @@
 // Specific CSS for your home-page
-body {
-  background-color: olive;
-  height: 1000px;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  background-image: url("home-background.jpeg");
+  background-size: cover;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  // height: 100%;
+  max-width: 100%;
+  background-position: bottom;
 }
